@@ -109,11 +109,11 @@ class Loader {
 
         // hijack redirect functionality of all links with 'taffy-href' property
         links.forEach( link => {
-            if ( link.hasAttribute( 'taffy-href' )) {
+            if ( link.hasAttribute( 'tf-href' )) {
                 link.addEventListener( 'click', ( event: MouseEvent ) => {
                     event.preventDefault()
 
-                    const href = link.getAttribute( 'taffy-href' ) as string
+                    const href = link.getAttribute( 'tf-href' ) as string
 
                     this.navigate( href )
                 })
