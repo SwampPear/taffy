@@ -16,7 +16,7 @@
   \**********************/
 /***/ (() => {
 
-eval("\nalert('sadf');\n\n\n//# sourceURL=webpack://taffy/./src/index.ts?");
+eval("\n\n\n//# sourceURL=webpack://taffy/./src/index.ts?");
 
 /***/ })
 
