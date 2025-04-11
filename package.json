@@ -1,0 +1,27 @@
+{
+  "name": "taffy",
+  "version": "1.0.0",
+  "description": "A nice stretchy UI framework.",
+  "keywords": [
+    "UI",
+    "modular"
+  ],
+  "homepage": "https://github.com/SwampPear/taffy#readme",
+  "bugs": {
+    "url": "https://github.com/SwampPear/taffy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SwampPear/taffy.git"
+  },
+  "license": "MIT",
+  "author": "Michael Vaden",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
