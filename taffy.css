@@ -1,0 +1,91 @@
+:root {
+    --tf-black-100: #0a0a0a; /* true black */
+    --tf-black-200: #121212; /* deep neutral black */
+    --tf-black-300: #1b1b1b; /* rich UI black (ideal for backgrounds) */
+    --tf-black-400: #242424; /* standard dark UI element */
+    --tf-black-500: #2e2e2e; /* subdued dark gray */
+    --tf-black-600: #383838; /* accessible for light-on-dark text */
+    --tf-black-700: #434343; /* low contrast edges & shadows */
+    --tf-black-800: #4f4f4f; /* disabled UI, subtle outlines */
+    --tf-black-900: #5c5c5c;  /* secondary text on dark bg */
+    --tf-black-1000: #696969; /* placeholder text / muted icon */
+    --tf-black-1100: #777777; /* disabled states / soft UI */
+    --tf-black-1200: #858585; /* lowest contrast on dark mode */
+    --tf-black-1300: #949494; /* extended: slightly lighter neutral gray */
+    --tf-black-1400: #a3a3a3; /* extended: light UI element */
+    --tf-black-1500: #b3b3b3; /* extended: nearing lighter backgrounds */
+    --tf-black-1600: #c3c3c3; /* extended: even lighter accent shade */
+
+    --tf-duration: .05s ease-in-out;
+}
+
+/*
+Display
+================================================================================
+*/
+
+.tf__hidden {
+    display: hidden;
+    opacity: 0;
+}
+
+.tf__visible {
+    display: block;
+    opacity: 1;
+}
+
+/*
+Animations
+================================================================================
+*/
+
+@keyframes tfAnimationFadeInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  
+.tf__animation__fade-in-from-top {
+    animation: tfAnimationFadeInFromTop 0.675s ease-in-out forwards;
+    opacity: 0;
+    position: relative;
+}
+
+@keyframes tfAnimationFadeInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  
+.tf__animation__fade-in-from-bottom {
+    animation: tfAnimationFadeInFromBottom 0.675s ease-in-out forwards;
+    opacity: 0;
+    position: relative;
+}
+
+@keyframes tfAnimationFadeOutToBottom {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+}
+  
+.tf__animation__fade-out-to-bottom {
+    animation: tfAnimationFadeOutToBottom 0.675s ease-in-out forwards;
+    opacity: 1;
+    position: relative;
+}
