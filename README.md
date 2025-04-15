@@ -1,7 +1,9 @@
 <div align="center">
     <img src="/assets/logo.png" style="width: 25%;" alt="logo"/>
 </div>
-<br>
+<hr>
+> A strechy little ui framework.
+
 
 
 
