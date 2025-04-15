@@ -1,7 +1,6 @@
 :root {
     /* Colors */
     --tf-black-200:     #121212;    /* deep black */
-    --tf-black-300:     #181818;    /* standard dark */
     --tf-black-400:     #242424;    /* standard dark */
     --tf-black-600:     #383838;    /* accessible for light-on-dark text */
     --tf-black-800:     #4f4f4f;    /* disabled UI, subtle outlines */
@@ -27,9 +26,6 @@
     --tf-z-modal:       1030;
     --tf-z-popover:     1040;
     --tf-z-tooltip:     1050;
-
-    /* Styles */
-    --tf-box-shadow-dark: rgba(18, 18, 18, 0.2) 0px 2px 8px 0px;
 }
 
 /*
@@ -43,7 +39,7 @@ Layout
 }
 
 .tf-row {
-
+    
 }
 
 .tf-col {
@@ -182,16 +178,4 @@ Animations
 
 .tf-fade-out-to-bottom {
     animation: tfFadeOutToBottom var(--tf-duration) ease-in-out forwards;
-}
-
-/*
-Styles
-================================================================================
-*/
-.tf-box-shadow {
-    box-shadow: var(--tf-box-shadow);
-}
-
-.tf-box-shadow-dark {
-    box-shadow: var(--tf-box-shadow-dark);
 }

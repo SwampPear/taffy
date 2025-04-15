@@ -122,4 +122,4 @@ class Loader {
     }
 }
 
-export { Route, Loader }
+export { Route, Loader, LoaderOptions }

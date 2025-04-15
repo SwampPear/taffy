@@ -1,13 +1,12 @@
 /**
- * Sets the title in head.
+ * Sets page title.
  */
 const setTitle = ( newTitle: string ) => {
     const title = document.querySelector( 'title' ) as HTMLTitleElement
-    
-    if ( title ) {
-        title.innerText = newTitle
+    if ( !title ) {
+        console.error( 'title not found' )
     } else {
-        console.error( 'No title element detected' )
+        title.innerText = newTitle
     }
 }
 
