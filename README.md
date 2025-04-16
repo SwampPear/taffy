@@ -9,3 +9,11 @@
 <hr>
 
 Taffy is a stretchy little UI framework.
+
+<br>
+
+# Running Docs
+'''
+cd taffy
+source ./env/bin/activate
+'''
